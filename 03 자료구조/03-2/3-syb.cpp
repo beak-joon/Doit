@@ -1,25 +1,10 @@
 #include <stdio.h>
-
 int main()
 {
-    long double ave,b,max,num[10000]={},total=0;
-    int a;
-    scanf("%d",&a);
-    for(int i=0; i<a; i++)
-    {
-        scanf("%Lf",&num[i]);
-    }
-    max = num[0];
-    for(int i=0; i<a; i++)
-    {
-        if(max < num[i])
-            max = num[i];
-    }
-    for(int i=0; i<a; i++)
-    {
-        total += (long double)((num[i]/max)*100);
-    }
-    ave = (long double)(total / a);
-    printf("%.14Lf",ave);
-    return 0;
+    int n,m,num[100001],input[100001][2],s[100001]={0,},a[100001]={0,};
+    scanf("%d %d",&n,&m);
+    for(int i=1; i<n+1; i++) scanf("%d",&num[i]);
+    for(int i=0; i<m; i++) scanf("%d %d",&input[i][0], &input[i][1]);
+    for(int j=1; j<n+1; j++) s[j] = s[j-1] + num[j];
+    for(int i=0; i<m; i++) printf("%d\n",s[input[i][1]]-s[input[i][0]-1]);
 }
