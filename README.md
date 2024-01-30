@@ -6,6 +6,20 @@
 
 ## 자료구조 
 
+## C++에서 형변환
+```
+#include <string>
+string num = "1234";
+int inum = stoi(num);
+int lnum = stol(num);
+int double = stod(num);
+int float = stof(num);
+
+int num = 1234;
+
+string intoString = to_string(num);
+```
+
 ## 정렬
 
 ## 탐색
