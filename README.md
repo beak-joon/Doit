@@ -5,27 +5,6 @@
 - 문제에 관해선 질문만 하고 리뷰는 따로 진행안함
 
 ## 자료구조 
-### C++ 코딩테스트 시간줄이기
-```
-    ios::sync_with_stdio(false); //stdio 비활성화, C++ 독립 버퍼사용
-    cin.tie(NULL); 
-    cout.tie(NULL); //cout 출력 버퍼지우는 작업 생략
-    
-    endl -> "\n" 사용(#define endl '\n' 하면 됨)
-```
-### C++에서 형변환
-```
-#include <string>
-string num = "1234";
-int inum = stoi(num);
-int lnum = stol(num);
-int double = stod(num);
-int float = stof(num);
-
-int num = 1234;
-
-string intoString = to_string(num);
-```
 
 ### C++ 템플릿
 ```
@@ -41,13 +20,27 @@ void Main(){
 }
 
 int main(){
-    ios_base::sync_with_stdio(0);
-    cin.tie(0); cout.tie(0);
+    ios_base::sync_with_stdio(0); //stdio 비활성화, C++ 독립 버퍼사용
+    cin.tie(0); cout.tie(0); //cout 출력 버퍼지우는 작업 생략
     cout.setf(ios::fixed);
     cout.precision(PRECISION); // 부동소수점 PRECISION 자리까지 출력
     Main();
     return 0;
 }
+```
+
+### C++에서 형변환
+```
+#include <string>
+string num = "1234";
+int inum = stoi(num);
+int lnum = stol(num);
+int double = stod(num);
+int float = stof(num);
+
+int num = 1234;
+
+string intoString = to_string(num);
 ```
 
 ## 정렬
