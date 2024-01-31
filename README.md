@@ -27,6 +27,29 @@ int num = 1234;
 string intoString = to_string(num);
 ```
 
+### C++ 템플릿
+```
+#include<bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+#define PRECISION 0
+
+// 전역변수 선언부
+
+void Main(){
+    // 코드 작성부
+}
+
+int main(){
+    ios_base::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
+    cout.setf(ios::fixed);
+    cout.precision(PRECISION); // 부동소수점 PRECISION 자리까지 출력
+    Main();
+    return 0;
+}
+```
+
 ## 정렬
 
 ## 탐색
