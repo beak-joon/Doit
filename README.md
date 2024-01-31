@@ -6,14 +6,13 @@
 
 ## 자료구조 
 ### C++ 코딩테슷트 시간줄이기
-'''
+```
     ios::sync_with_stdio(false); //stdio 비활성화, C++ 독립 버퍼사용
     cin.tie(NULL); 
     cout.tie(NULL); //cout 출력 버터지우는 작업 생략
     
     endl -> "\n" 사용
-
-'''
+```
 ### C++에서 형변환
 ```
 #include <string>
