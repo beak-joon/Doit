@@ -25,7 +25,7 @@ int main(){
         }
     }
 
-    std::cout<<Max<<'\n';
+    std::cout<<Max+1<<'\n';
 
     return 0;
 }
