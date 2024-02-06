@@ -52,7 +52,8 @@ string intoString = to_string(num);
 ## 정수론
 
 ## 그래프
-
+* [그래프 개념 및 알고리즘](https://1004jonghee.tistory.com/entry/%EA%B7%B8%EB%9E%98%ED%94%84-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+* [Union-Find](https://velog.io/@ywc8851/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-Union-Find-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 ## 트리
 
 ## 조합
