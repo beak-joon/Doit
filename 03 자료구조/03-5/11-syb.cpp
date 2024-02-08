@@ -1,26 +1,38 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-typedef pair<int, int>Node;
-
 int main()
 {
     ios_base::sync_with_stdio(0);
     cin.tie(0); cout.tie(0);
-    int N,L;
-    cin >> N >> L;
-    deque<Node> mydeque;
-    for(int i=0; i<N; i++){
-        int now;
-        cin >> now;
-        while(mydeque.size() && mydeque.back().first > now){
-            mydeque.pop_back();
+
+    int n, idx=1;
+    cin >> n;
+    stack<int> myStack;
+    vector<int> v(n);
+    vector<char> r;
+    for(int i=0; i<n; i++) cin >> v[i];
+
+    for(int i=0; i<v.size(); i++){
+        if(idx <= v[i]){
+            while(idx <= v[i]){
+                myStack.push(idx++);
+                r.push_back('+');
+            }
+            myStack.pop();
+            r.push_back('-');
         }
-        mydeque.push_back(Node(now,i));
-        if(mydeque.front().second <= i - L){
-            mydeque.pop_front();
+        else{
+            if(myStack.top() > v[i]){
+                cout << "NO";
+                return 0;
+            }
+            myStack.pop();
+            r.push_back('-');
         }
-        cout << mydeque.front().first << ' ';
     }
+    for(int i=0; i<r.size(); i++){
+        cout << r[i] << '\n';    
+    } 
     return 0;
 }
