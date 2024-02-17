@@ -41,6 +41,9 @@ int float = stof(num);
 int num = 1234;
 
 string intoString = to_string(num);
+
+char num;
+int inum = num - '0';
 ```
 
 ## 정렬
