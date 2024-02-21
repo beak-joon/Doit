@@ -28,6 +28,6 @@ int main()
         }
         pq.pop();
     }
-    cout << result;
+    cout << result << '\n';
     return 0;
 }
